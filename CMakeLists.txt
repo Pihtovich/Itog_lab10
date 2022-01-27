@@ -14,12 +14,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 add_definitions(-DSFML_STATIC)		 # дефайны
 
 include_directories("ext/SFML/include/")	# добавляем директории
-include_directories("inc/")
 include_directories("images/")
 include_directories("scr/")
 link_directories("ext/SFML/lib/")	
 
 add_executable("${PROJECT_NAME}" main.cpp
+				 scr/bullet.hpp
+				 scr/entity.hpp
+				 scr/player.hpp
 		
 )
 											
